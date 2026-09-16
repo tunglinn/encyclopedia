@@ -58,7 +58,7 @@ traffic jam appearing without any agent being "programmed" to form one).
   individuals with distinct contact patterns)
 - Economics and finance (markets as populations of trading agents with
   different strategies)
-- Traffic and pedestrian flow
+- Traffic and pedestrian flow (see [[Mobility Simulations]] for a deep dive on transportation-specific ABM tools, tradeoffs, and a worked example)
 - Ecology (predator-prey dynamics, foraging behavior)
 - Social science (opinion dynamics, segregation models like Schelling's
   model)
