@@ -24,10 +24,21 @@ lives in git history — `git log --follow -- content/<file>.md` or
 ## Local preview
 
 ```
-npx quartz build --serve
+npx quartz build --serve --baseDir encyclopedia
 ```
 
-Serves the site at `http://localhost:8080` and rebuilds on file changes.
+Serves the site at `http://localhost:8080/encyclopedia` and rebuilds on file
+changes. The site's `baseUrl` (`quartz.config.yaml`) is
+`tunglinn.github.io/encyclopedia` — a GitHub Pages *project* site, not a
+custom domain — so a handful of absolute references (the 404 page's
+favicon, canonical links, OG tags) have `/encyclopedia` baked into them at
+build time. `--baseDir encyclopedia` tells the local server to expect and
+strip that same prefix, so what you see locally matches what's live,
+byte for byte.
+
+Plain `npx quartz build --serve` (no `--baseDir`) also mostly works, since
+links between notes are relative — but the few absolute-path references
+above will 404 locally, so use `--baseDir` if something looks broken.
 
 ## Publishing
 
