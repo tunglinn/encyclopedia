@@ -58,7 +58,7 @@ Lane-changing adds gap-acceptance logic (will a driver squeeze into that gap or 
 <table style="width:100%; border-collapse:collapse;">
 <tr style="border-bottom:1px solid #ddd;"><td style="padding:6px; font-weight:bold;">Tool</td><td style="padding:6px; font-weight:bold;">Type</td><td style="padding:6px; font-weight:bold;">Best for</td></tr>
 <tr style="border-bottom:1px solid #eee;"><td style="padding:6px;"><strong><a href="https://eclipse.dev/sumo/">SUMO</a></strong></td><td style="padding:6px;">Open source, microscopic</td><td style="padding:6px;">Easiest entry point; scriptable via Python (TraCI); imports OSM directly</td></tr>
-<tr style="border-bottom:1px solid #eee;"><td style="padding:6px;"><strong><a href="https://matsim.org/">MATSim</a></strong></td><td style="padding:6px;">Open source, agent-based</td><td style="padding:6px;">City/region-scale demand modeling with synthetic populations</td></tr>
+<tr style="border-bottom:1px solid #eee;"><td style="padding:6px;"><strong>[[MATSim]]</strong></td><td style="padding:6px;">Open source, agent-based</td><td style="padding:6px;">City/region-scale demand modeling with synthetic populations</td></tr>
 <tr style="border-bottom:1px solid #eee;"><td style="padding:6px;"><strong><a href="https://github.com/LBNL-UCB-STI/beam">BEAM</a></strong></td><td style="padding:6px;">Open source (built on MATSim)</td><td style="padding:6px;">Adding ride-hail, EVs, multimodal choice on top of MATSim</td></tr>
 <tr style="border-bottom:1px solid #eee;"><td style="padding:6px;"><strong><a href="https://www.aimsun.com/">Aimsun</a> / <a href="https://www.ptvgroup.com/en/products/ptv-vissim">PTV Vissim</a> / <a href="https://www.caliper.com/transmodeler/default.htm">TransModeler</a></strong></td><td style="padding:6px;">Commercial, GUI-driven</td><td style="padding:6px;">What most transportation agencies and consultants actually use day to day</td></tr>
 <tr style="border-bottom:1px solid #eee;"><td style="padding:6px;"><strong><a href="https://www.anl.gov/taps/polaris-transportation-system-simulation-tool">POLARIS</a></strong></td><td style="padding:6px;">Open source (Argonne National Lab)</td><td style="padding:6px;">Large-scale connected/autonomous vehicle research</td></tr>
@@ -148,7 +148,7 @@ This is genuinely a weekend project at the simplest level, and a multi-week one 
 
 **Adding your own logic (a weekend):** Use SUMO's TraCI Python API to hook into the simulation frame by frame — inject your own vehicles, control a traffic signal with custom logic, or log data for analysis. This is also the on-ramp to RL-based traffic control research (pair it with `Flow` or `CityFlow` if you want a ready-made Gym-style RL environment).
 
-**City-scale behavioral realism (weeks, real data engineering):** MATSim if you want synthetic populations making daily activity choices instead of pre-scripted trips — expect to spend real time on config XML and demand data preparation before you get an interesting result.
+**City-scale behavioral realism (weeks, real data engineering):** [[MATSim]] if you want synthetic populations making daily activity choices instead of pre-scripted trips — expect to spend real time on config XML and demand data preparation before you get an interesting result.
 
 ## Quiz
 

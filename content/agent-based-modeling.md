@@ -90,7 +90,7 @@ In short: today's mainstream ABM tools need assumptions translated into calibrat
 - **NetLogo** — approachable, widely used in teaching, its own simple scripting language.
 - **Mesa** (Python) — a lightweight framework where agent logic is ordinary Python, easy to integrate with the rest of the Python data/ML ecosystem.
 - **Repast** — Java-based, used for larger and more performance-sensitive academic models.
-- Domain-specific transportation platforms (MATSim, BEAM, ActivitySim) — see [[Mobility Simulations]].
+- Domain-specific transportation platforms ([[MATSim]], BEAM, ActivitySim) — see [[Mobility Simulations]].
 
 ## Quiz
 
